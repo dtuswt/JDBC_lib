@@ -13,6 +13,7 @@ before_install:
   - git clone https://github.com/hold12/CDIO_final_sql
   - ls CDIO_final_sql
   - mysql -u root dbweight < CDIO_final_sql/tables.sql
+  - mysql -u root dbweigth < CDIO_final_sql/insert_procedures/insertUser.sql
   - sudo apt-get install ant-optional
 
 notifications:
