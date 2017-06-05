@@ -1,3 +1,5 @@
+package jdbclib;
+
 public class DALException extends Exception
 {
 	private static final long serialVersionUID = -5490114628089339322L;
