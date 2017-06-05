@@ -23,7 +23,7 @@ public class DBConnector implements IConnector {
     }
 
     public DBConnector() {
-        new DBConnector("127.0.0.1", 3306, "", "root", "");
+        new DBConnector("127.0.0.1", 3306, "dbweight", "root", "");
     }
 
     @Override
