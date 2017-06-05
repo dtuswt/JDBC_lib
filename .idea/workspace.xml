@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="stacktrace + correct pwd">
+    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/DBConnectorTest.java" afterPath="$PROJECT_DIR$/test/unit/DBConnectorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnectorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnectorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/DBConnectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="300">
+              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/jdbclib/IConnector.java" />
         <option value="$PROJECT_DIR$/tests/unit/DBConnectorTest.java" />
         <option value="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/test/unit/DBConnectorTest.java" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -700,7 +700,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496411605874</updated>
       <workItem from="1496411608985" duration="1301000" />
-      <workItem from="1496654380432" duration="10349000" />
+      <workItem from="1496654380432" duration="10435000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -786,11 +786,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496667721476</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="stacktrace + correct pwd">
+      <created>1496668026148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496668026149</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11650000" />
+    <option name="totallyTimeSpent" value="11736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -850,7 +857,8 @@
     <MESSAGE value="use the correct view" />
     <MESSAGE value="travis sql user" />
     <MESSAGE value="aand revert" />
-    <option name="LAST_COMMIT_MESSAGE" value="aand revert" />
+    <MESSAGE value="stacktrace + correct pwd" />
+    <option name="LAST_COMMIT_MESSAGE" value="stacktrace + correct pwd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -984,21 +992,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DBConnectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="300">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
