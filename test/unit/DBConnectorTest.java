@@ -19,13 +19,10 @@ public class DBConnectorTest {
             db.connectToDatabase();
             db.close();
         } catch (ClassNotFoundException e) {
-            fail();
             throw new ClassNotFoundException("JDBC library not found.");
         } catch (SQLException e) {
-            fail();
             throw new SQLException("Problems while connecting to database.");
         } catch (DALException e) {
-            fail();
             throw new DALException("Failed to close connection.");
         }
 
