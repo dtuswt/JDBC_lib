@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class DBConnectorTest {
     @Test
     public void TestConnectDatabase() throws Exception {
-        IConnector db = new DBConnector();
+        IConnector db = new DBConnector("127.0.0.1", 3306, "dbweight", "travis", "");
 
         try {
             db.connectToDatabase();
