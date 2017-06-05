@@ -22,7 +22,7 @@ public class FullDatabaseTest {
             throw new SQLException(e.getMessage());
         }
 
-        db.update("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\");");
+        db.update("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
         try {
             db.close();
