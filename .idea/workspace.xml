@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="fixed a non-error">
+    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/DBConnectorTest.java" afterPath="$PROJECT_DIR$/test/unit/DBConnectorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" afterPath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,21 +21,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jdbclib/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+            <state relative-caret-position="330">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#828#829#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnectorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnectorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/DBConnectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -138,8 +137,8 @@
         <option value="$PROJECT_DIR$/src/jdbclib/IConnector.java" />
         <option value="$PROJECT_DIR$/tests/unit/DBConnectorTest.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
         <option value="$PROJECT_DIR$/test/unit/DBConnectorTest.java" />
+        <option value="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
       </list>
     </option>
   </component>
@@ -700,7 +699,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496411605874</updated>
       <workItem from="1496411608985" duration="1301000" />
-      <workItem from="1496654380432" duration="10581000" />
+      <workItem from="1496654380432" duration="10708000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -800,11 +799,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496668186507</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="empty constructor">
+      <created>1496668370380</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496668370380</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11882000" />
+    <option name="totallyTimeSpent" value="12009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -866,7 +872,8 @@
     <MESSAGE value="aand revert" />
     <MESSAGE value="stacktrace + correct pwd" />
     <MESSAGE value="fixed a non-error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a non-error" />
+    <MESSAGE value="empty constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="empty constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -883,8 +890,7 @@
           <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,24 +1002,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbclib/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DBConnectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbclib/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
           </folding>
         </state>
       </provider>
