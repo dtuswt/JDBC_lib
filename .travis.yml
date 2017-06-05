@@ -12,8 +12,8 @@ before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS dbweight;'
   - git clone https://github.com/hold12/CDIO_final_sql
   - ls CDIO_final_sql
-  - mysql -u root dbweight < CDIO_final_sql/tables.sql
-  - mysql -u root dbweight < CDIO_final_sql/views/operator.sql
+  - mysql -u root -h 127.0.0.1 dbweight < CDIO_final_sql/tables.sql
+  - mysql -u root -h 127.0.0.1 dbweight < CDIO_final_sql/views/operator.sql
   - sudo apt-get install ant-optional
 
 notifications:
