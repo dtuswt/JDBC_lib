@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class DBConnectorTest {
     @Test
     public void TestConnectDatabase() throws Exception {
-        IConnector db = new DBConnector("127.0.0.1", 3306, "dbweight", "root", "  ");
+        IConnector db = new DBConnector("127.0.0.1", 3306, "dbweight", "root", "");
 
         try {
             db.connectToDatabase();
@@ -21,6 +21,7 @@ public class DBConnectorTest {
         } catch (ClassNotFoundException e) {
             throw new ClassNotFoundException("JDBC library not found.");
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new SQLException("Problems while connecting to database.");
         } catch (DALException e) {
             throw new DALException("Failed to close connection.");
