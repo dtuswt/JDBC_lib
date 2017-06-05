@@ -6,8 +6,8 @@ import java.sql.Statement;
 
 public class DBConnector implements IConnector {
     private Connection connection;
-    private Statement statement; // TODO: Make this a prepared statement, in a nice way
-    private boolean connectionIsOpen = false;
+    private Statement statement;
+    private boolean connectionIsOpen = false; // TODO: use this??
 
     private String host, database, username, password;
     private int port;
@@ -21,14 +21,12 @@ public class DBConnector implements IConnector {
     }
 
     public DBConnector() {
-        new DBConnector("127.0.0.1", 3306, "", "root", ""); // TODO: Test diz pleazz
+        new DBConnector("127.0.0.1", 3306, "", "root", "");
     }
 
     @Override
     public Connection connectToDatabase()
-            throws InstantiationException, IllegalAccessException,
-                ClassNotFoundException, SQLException {
-        // TODO: When will InstantiationException or IllegalAccessException be thrown? - Will it ever be thrown?
+            throws ClassNotFoundException, SQLException {
 
         // See if JDBC Library is imported to the project
         if (!checkJDBCDriverExists())
