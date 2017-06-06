@@ -46,8 +46,8 @@ public class FullDatabaseTest {
         assertNotNull(userId);
 
 
-//        ResultSet newUser = db.query("SELECT * FROM adm_user WHERE user_id = " + userId);
-//        assertTrue(newUser.first());
+          ResultSet newUser = db.query("SELECT * FROM adm_user WHERE user_id = " + userId);
+          assertTrue(newUser.first());
 //        assertEquals("John", newUser.getString("firstname"));
 //        assertEquals("Doe", newUser.getString("lastname"));
 //        assertEquals("JD", newUser.getString("initials"));
