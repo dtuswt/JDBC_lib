@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" afterPath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" afterPath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,8 +81,8 @@
       <file leaf-file-name="FullDatabaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="720">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -780,7 +779,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="8292000" />
+      <workItem from="1496734266195" duration="8490000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -1020,11 +1019,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496752548661</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="int test done">
+      <created>1496753147753</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1496753147753</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22177000" />
+    <option name="totallyTimeSpent" value="22375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -1074,7 +1080,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use the correct view" />
     <MESSAGE value="travis sql user" />
     <MESSAGE value="aand revert" />
     <MESSAGE value="stacktrace + correct pwd" />
@@ -1099,7 +1104,8 @@
     <MESSAGE value="travis environment file" />
     <MESSAGE value="change travis database name" />
     <MESSAGE value="change db name again for travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="change db name again for travis" />
+    <MESSAGE value="int test done" />
+    <option name="LAST_COMMIT_MESSAGE" value="int test done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1404,8 +1410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="720">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
