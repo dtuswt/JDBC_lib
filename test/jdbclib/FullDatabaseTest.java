@@ -26,7 +26,7 @@ public class FullDatabaseTest {
         ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
         assertNotNull(s.getInt("user_id"));
-        System.out.println("Generated userid = " + s.getInt("user_id"));
+        System.out.println("Generated user_id = " + s.getInt("user_id"));
         assertEquals("John", s.getString("user_firstname"));
         assertEquals("Doe", s.getString("user_lastname"));
         assertEquals("JD", s.getString("initials"));
