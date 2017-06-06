@@ -47,8 +47,7 @@ public class FullDatabaseTest {
 
 
         ResultSet newUser = db.query("SELECT * FROM adm_user WHERE user_id = " + userId);
-//        assertTrue(newUser.first());
-        newUser.next();
+        assertTrue(newUser.first());
         assertEquals("John", newUser.getString("firstname"));
         assertEquals("Doe", newUser.getString("lastname"));
         assertEquals("JD", newUser.getString("initials"));
