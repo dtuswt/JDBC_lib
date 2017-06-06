@@ -23,11 +23,11 @@ public class FullDatabaseTest {
             throw new SQLException(e.getMessage());
         }
 
-        int id = db.update("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
+        ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
-        System.out.println("ID is " + id);
-//        assertNotNull(s.getInt("user_id"));
-//        System.out.println("Generated user_id = " + s.getInt("user_id"));
+//        System.out.println("ID is " + s.getInt("user_id"));
+        assertNotNull(s.getInt("user_id"));
+        System.out.println("Generated user_id = " + s.getInt("user_id"));
 //        assertEquals("John", s.getString("user_firstname"));
 //        assertEquals("Doe", s.getString("user_lastname"));
 //        assertEquals("JD", s.getString("initials"));

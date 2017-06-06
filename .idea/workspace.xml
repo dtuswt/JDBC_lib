@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="Does insertUser return a ResultSet?">
+    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" afterPath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
     </list>
@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -709,7 +709,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="572000" />
+      <workItem from="1496734266195" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -844,11 +844,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496735445424</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Does insertUser return a user_id?">
+      <created>1496737207840</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1496737207855</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14457000" />
+    <option name="totallyTimeSpent" value="14625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -915,7 +922,8 @@
     <MESSAGE value="Merge branch 'feature/integration-test' of https://github.com/hold12/JDBC_lib into feature/integration-test&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;test/jdbclib/FullDatabaseTest.java" />
     <MESSAGE value="spelling" />
     <MESSAGE value="test travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="test travis" />
+    <MESSAGE value="Does insertUser return a user_id?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Does insertUser return a user_id?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1197,7 +1205,7 @@
     <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding />
         </state>
       </provider>
