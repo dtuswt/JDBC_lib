@@ -27,7 +27,7 @@ public class DBConnector implements IConnector {
     }
 
     public DBConnector(DatabaseConnection databaseConnection) {
-        this.host = databaseConnection.getHost();
+        this.host = "jdbc:mysql://"+databaseConnection.getHost()+":"+databaseConnection.getPort()+"/"+databaseConnection.getDatabase();
         this.port = databaseConnection.getPort();
         this.database = databaseConnection.getDatabase();
         this.username = databaseConnection.getUsername();
@@ -36,7 +36,7 @@ public class DBConnector implements IConnector {
 
     @Override
     public Connection connectToDatabase()
-            throws ClassNotFoundException, SQLException {
+            throws ClassNotFoundException, SQLException, DALException {
 
         // See if JDBC Library is imported to the project
         if (!checkJDBCDriverExists())
@@ -48,11 +48,15 @@ public class DBConnector implements IConnector {
         return this.connection;
     }
 
-    private boolean checkJDBCDriverExists() {
+    private boolean checkJDBCDriverExists() throws DALException {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
         } catch (ClassNotFoundException e) {
             return false;
+        } catch (InstantiationException e) {
+            throw new DALException("InstantiationException: " + e.getMessage());
+        } catch (IllegalAccessException e) {
+            throw new DALException("IllegalAccessException: " + e.getMessage());
         }
         return true;
     }

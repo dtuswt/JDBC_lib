@@ -35,16 +35,15 @@ public class FullDatabaseTest {
         } catch (ClassNotFoundException e) {
             throw new ClassNotFoundException(e.getMessage());
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new SQLException(e.getMessage());
         }
 
         ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
-        int userid = s.getInt(1);
-        System.out.println("UserId = " + userid);
-        assertNotNull(userid);
+        assertTrue(s.first());
+        assertNotNull(s.getInt(1));
 
-//        ResultSet newUser = db.query("SELECT * FROM adm_user WHERE id = " + userid + ";");
 
 //        assertEquals("John", newUser.getString(2));
 
@@ -53,5 +52,15 @@ public class FullDatabaseTest {
         } catch (DALException e) {
             throw new DALException(e.getMessage());
         }
+
+//        try {
+//            db.connectToDatabase();
+//        } catch (ClassNotFoundException e) {
+//            throw new ClassNotFoundException(e.getMessage());
+//        } catch (SQLException e) {
+//            throw new SQLException(e.getMessage());
+//        }
+//
+//        ResultSet newUser = db.query("SELECT * FROM adm_user WHERE id = " + userid + ";");
     }
 }

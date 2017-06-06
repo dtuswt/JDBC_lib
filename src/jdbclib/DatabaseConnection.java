@@ -23,7 +23,7 @@ public class DatabaseConnection {
         this.password = password;
     }
 
-    public DatabaseConnection() throws Exception {
+    public DatabaseConnection() throws IOException, ArithmeticException {
         File file = new File(".env");
         Properties props = null;
 
@@ -31,8 +31,7 @@ public class DatabaseConnection {
             props = new Properties();
             props.load(fileInputStream);
         } catch (IOException e) {
-            // File probably doesn't exist; ignore.
-            return;
+            throw new IOException("File not found.");
         }
 
         database = props.getProperty("DB_DATABASE");
@@ -40,7 +39,7 @@ public class DatabaseConnection {
         password = props.getProperty("DB_PASSWORD");
         host     = props.getProperty("DB_HOST"); try {
             port     = Integer.parseInt(props.getProperty("DB_PORT"));
-        } catch (Exception e){ throw new Exception("DB_PORT not an integer."); }
+        } catch (ArithmeticException e){ throw new ArithmeticException("DB_PORT not an integer."); }
     }
 
     public String getHost()     { return host;     }
