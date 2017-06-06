@@ -51,8 +51,8 @@
       <file leaf-file-name="FullDatabaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -758,7 +758,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="2044000" />
+      <workItem from="1496734266195" duration="2600000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -949,11 +949,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496742259002</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="works?">
+      <created>1496742399956</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1496742399956</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15929000" />
+    <option name="totallyTimeSpent" value="16485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -1003,7 +1010,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned up DBConnector" />
     <MESSAGE value="Testing if travis can create a database and connect to it.&#10;&#10;Added libraries, travis configuration and ant build file.&#10;&#10;Refactored connection classes to be in a package (jdbclib)" />
     <MESSAGE value="refactoed tests -&gt; test" />
     <MESSAGE value="remove fail() methods." />
@@ -1028,7 +1034,8 @@
     <MESSAGE value="this works" />
     <MESSAGE value="this also works" />
     <MESSAGE value="resultset gets data?" />
-    <option name="LAST_COMMIT_MESSAGE" value="resultset gets data?" />
+    <MESSAGE value="works?" />
+    <option name="LAST_COMMIT_MESSAGE" value="works?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1301,8 +1308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="390">
+          <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
           <folding />
         </state>
       </provider>
