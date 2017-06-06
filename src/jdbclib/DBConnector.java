@@ -15,15 +15,23 @@ public class DBConnector implements IConnector {
     private int port;
 
     public DBConnector(String hostname, int port, String database, String username, String password) {
-        this.database = database;
+        this.host = "jdbc:mysql://"+hostname+":"+this.port+"/"+this.database;
         this.port = port;
+        this.database = database;
         this.username = username;
         this.password = password;
-        this.host = "jdbc:mysql://"+hostname+":"+this.port+"/"+this.database;
     }
 
     public DBConnector() {
-        this("127.0.0.1", 3306, "dbweight", "root", "");
+        this("127.0.0.1", 3306, "cdio_final", "root", "");
+    }
+
+    public DBConnector(DatabaseConnection databaseConnection) {
+        this.host = databaseConnection.getHost();
+        this.port = databaseConnection.getPort();
+        this.database = databaseConnection.getDatabase();
+        this.username = databaseConnection.getUsername();
+        this.password = databaseConnection.getPassword();
     }
 
     @Override

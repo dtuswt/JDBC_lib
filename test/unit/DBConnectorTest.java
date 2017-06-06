@@ -1,9 +1,11 @@
 package unit;
 
+import org.junit.Before;
 import org.junit.Test;
+
 import java.sql.SQLException;
+
 import jdbclib.*;
-import static org.junit.Assert.*;
 
 /**
  * Created by awo on 05/06/17.
@@ -11,9 +13,22 @@ import static org.junit.Assert.*;
 
 // I know this is technically not a unit test...
 public class DBConnectorTest {
+    private DatabaseConnection databaseConnection;
+
+    @Before
+    public void setup() throws Exception {
+        try {
+            databaseConnection = new DatabaseConnection();
+        } catch (Exception e) {
+            return; /* No .env file exists. */
+        }
+    }
+
     @Test
     public void TestConnectDatabase() throws Exception {
-        IConnector db = new DBConnector();
+        IConnector db;
+        if (databaseConnection != null) db = new DBConnector(databaseConnection);
+        else db = new DBConnector();
 
         try {
             db.connectToDatabase();

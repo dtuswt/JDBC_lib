@@ -1,5 +1,6 @@
 package jdbclib;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.sql.ResultSet;
@@ -11,9 +12,23 @@ import static org.junit.Assert.*;
  * Created by awo on 05/06/17.
  */
 public class FullDatabaseTest {
+    DatabaseConnection databaseConnection;
+
+    @Before
+    public void setup() {
+        try {
+            databaseConnection = new DatabaseConnection();
+        } catch (Exception e) {
+            return; /* No .env file. */
+        }
+    }
+
     @Test
     public void testReadWrite() throws Exception {
-        IConnector db = new DBConnector("h12-dev.wiberg.tech", 3306, "cdio_final", "hold12", "2017_h0lD!2");
+        IConnector db;
+
+        if (databaseConnection!= null) db = new DBConnector(databaseConnection);
+        else db = new DBConnector();
 
         try {
             db.connectToDatabase();
@@ -29,7 +44,7 @@ public class FullDatabaseTest {
         System.out.println("UserId = " + userid);
         assertNotNull(userid);
 
-        ResultSet newUser = db.query("SELECT * FROM adm_user WHERE id = " + userid + ";");
+//        ResultSet newUser = db.query("SELECT * FROM adm_user WHERE id = " + userid + ";");
 
 //        assertEquals("John", newUser.getString(2));
 
