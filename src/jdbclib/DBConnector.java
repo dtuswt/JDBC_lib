@@ -1,3 +1,5 @@
+package jdbclib;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -6,29 +8,35 @@ import java.sql.Statement;
 
 public class DBConnector implements IConnector {
     private Connection connection;
-    private Statement statement; // TODO: Make this a prepared statement, in a nice way
-    private boolean connectionIsOpen = false;
+    private Statement statement;
+    private boolean connectionIsOpen = false; // TODO: use this??
 
     private String host, database, username, password;
     private int port;
 
     public DBConnector(String hostname, int port, String database, String username, String password) {
-        this.database = database;
+        this.host = "jdbc:mysql://"+hostname+":"+this.port+"/"+this.database;
         this.port = port;
+        this.database = database;
         this.username = username;
         this.password = password;
-        this.host = "jdbc:mysql://"+hostname+":"+this.port+"/"+this.database;
     }
 
     public DBConnector() {
-        new DBConnector("127.0.0.1", 3306, "", "root", ""); // TODO: Test diz pleazz
+        this("127.0.0.1", 3306, "cdio_final", "root", "");
+    }
+
+    public DBConnector(DatabaseConnection databaseConnection) {
+        this.host = "jdbc:mysql://"+databaseConnection.getHost()+":"+databaseConnection.getPort()+"/"+databaseConnection.getDatabase();
+        this.port = databaseConnection.getPort();
+        this.database = databaseConnection.getDatabase();
+        this.username = databaseConnection.getUsername();
+        this.password = databaseConnection.getPassword();
     }
 
     @Override
     public Connection connectToDatabase()
-            throws InstantiationException, IllegalAccessException,
-                ClassNotFoundException, SQLException {
-        // TODO: When will InstantiationException or IllegalAccessException be thrown? - Will it ever be thrown?
+            throws ClassNotFoundException, SQLException, DALException {
 
         // See if JDBC Library is imported to the project
         if (!checkJDBCDriverExists())
@@ -40,11 +48,15 @@ public class DBConnector implements IConnector {
         return this.connection;
     }
 
-    private boolean checkJDBCDriverExists() {
+    private boolean checkJDBCDriverExists() throws DALException {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
         } catch (ClassNotFoundException e) {
             return false;
+        } catch (InstantiationException e) {
+            throw new DALException("InstantiationException: " + e.getMessage());
+        } catch (IllegalAccessException e) {
+            throw new DALException("IllegalAccessException: " + e.getMessage());
         }
         return true;
     }
@@ -90,6 +102,7 @@ public class DBConnector implements IConnector {
     @Override
     public void close() throws DALException {
         try {
+            if (this.statement != null) this.statement.close();
             if (this.connection != null) this.connection.close();
         } catch (SQLException e) {
             throw new DALException("Could not close connection: " + e.getMessage());

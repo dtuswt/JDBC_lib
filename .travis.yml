@@ -1,0 +1,29 @@
+dist: trusty
+sudo: required
+
+language: java
+jdk:
+  - oraclejdk8
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS cdio_final;'
+  - git clone https://github.com/hold12/CDIO_final_sql
+  - ls CDIO_final_sql
+  - mysql -u root cdio_final < CDIO_final_sql/tables.sql
+  - mysql -u root cdio_final < CDIO_final_sql/insert_procedures/insertUser.sql
+  - mysql -u root cdio_final < CDIO_final_sql/views/adm_user.sql
+  - echo DB_HOST=$DBHOST >> .env
+  - echo DB_PORT=$DBPORT >> .env
+  - echo DB_DATABASE=$DBNAME >> .env
+  - echo DB_USERNAME=$DBUSER >> .env
+  - echo DB_PASSWORD=$DBPASS >> .env
+
+notifications:
+  email:
+    recipiens:
+      - anders@wiberg.tech
+    on_success: never
+    on_failure: change
