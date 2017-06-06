@@ -102,6 +102,7 @@ public class DBConnector implements IConnector {
     @Override
     public void close() throws DALException {
         try {
+            if (this.statement != null) this.statement.close();
             if (this.connection != null) this.connection.close();
         } catch (SQLException e) {
             throw new DALException("Could not close connection: " + e.getMessage());
