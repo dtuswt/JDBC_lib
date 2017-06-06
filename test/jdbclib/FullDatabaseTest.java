@@ -23,7 +23,7 @@ public class FullDatabaseTest {
             throw new SQLException(e.getMessage());
         }
 
-        ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\");");
+        ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
         assertNotNull(s.getInt("user_id"));
         System.out.println("Generated userid = " + s.getInt("user_id"));
