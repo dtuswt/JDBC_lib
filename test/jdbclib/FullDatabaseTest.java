@@ -52,7 +52,7 @@ public class FullDatabaseTest {
         assertEquals("John", newUser.getString("firstname"));
         assertEquals("Doe", newUser.getString("lastname"));
         assertEquals("JD", newUser.getString("initials"));
-        assertEquals("administrator", newUser.getString("roles"));
+        assertEquals("administrator", newUser.getString("role_name"));
 
         try {
             db.close();
