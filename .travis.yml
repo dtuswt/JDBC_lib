@@ -9,7 +9,7 @@ services:
   - mysql
 
 before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS dbweight;'
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS cdio_final;'
   - git clone https://github.com/hold12/CDIO_final_sql
   - ls CDIO_final_sql
   - mysql -u root dbweight < CDIO_final_sql/tables.sql
