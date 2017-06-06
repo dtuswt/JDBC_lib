@@ -14,6 +14,11 @@ before_install:
   - ls CDIO_final_sql
   - mysql -u root dbweight < CDIO_final_sql/tables.sql
   - mysql -u root dbweight < CDIO_final_sql/insert_procedures/insertUser.sql
+  - echo DB_HOST=$DBHOST >> .env
+  - echo DB_PORT=$DBPORT >> .env
+  - echo DB_DATABASE=$DBNAME >> .env
+  - echo DB_USERNAME=$DBUSER >> .env
+  - echo DB_PASSWORD=$DBPASS >> .env
 
 notifications:
   email:

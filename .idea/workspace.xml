@@ -6,13 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="Added database environment file and reader for it, testing travis">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env-example" />
+    <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" afterPath="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java" afterPath="$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbclib/IConnector.java" afterPath="$PROJECT_DIR$/src/jdbclib/IConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" afterPath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env-example" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env-example" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env-example">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -63,11 +59,9 @@
       <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+            <state relative-caret-position="300">
+              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -170,7 +164,6 @@
         <option value="$PROJECT_DIR$/tests/DBConnectorTest.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/tests/unit/DBConnectorTest.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java" />
@@ -179,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
         <option value="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
         <option value="$PROJECT_DIR$/.env-example" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -785,7 +779,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="7218000" />
+      <workItem from="1496734266195" duration="7478000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -997,11 +991,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496748744461</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixed shit and added stuff">
+      <created>1496751552794</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1496751552794</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21103000" />
+    <option name="totallyTimeSpent" value="21363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -1051,7 +1052,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove fail() methods." />
     <MESSAGE value="databasename = dbweight" />
     <MESSAGE value="ls to see if travis downloads files correctly" />
     <MESSAGE value="created artifact + added host in travis.yml" />
@@ -1076,7 +1076,8 @@
     <MESSAGE value="works?" />
     <MESSAGE value="works on travis???" />
     <MESSAGE value="Added database environment file and reader for it, testing travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database environment file and reader for it, testing travis" />
+    <MESSAGE value="fixed shit and added stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed shit and added stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1293,14 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
@@ -1343,16 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DBConnectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1373,6 +1356,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env-example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1381,10 +1372,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env-example">
+    <entry file="file://$PROJECT_DIR$/src/jdbclib/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
