@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="382af179-a702-43f1-aa08-0993c10ab76c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" afterPath="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,17 +48,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FullDatabaseTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FullDatabaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -150,8 +150,8 @@
         <option value="$PROJECT_DIR$/test/unit/DBConnectorTest.java" />
         <option value="$PROJECT_DIR$/src/jdbclib/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/jdbclib/IConnector.java" />
-        <option value="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java" />
       </list>
     </option>
   </component>
@@ -758,7 +758,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="1723000" />
+      <workItem from="1496734266195" duration="1899000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -935,11 +935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496741969316</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="this also works">
+      <created>1496742030559</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1496742030559</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15608000" />
+    <option name="totallyTimeSpent" value="15784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -1012,7 +1019,8 @@
     <MESSAGE value="Does insertUser return a result set? 3" />
     <MESSAGE value="get column 0" />
     <MESSAGE value="this works" />
-    <option name="LAST_COMMIT_MESSAGE" value="this works" />
+    <MESSAGE value="this also works" />
+    <option name="LAST_COMMIT_MESSAGE" value="this also works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1275,18 +1283,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding />
         </state>
       </provider>
