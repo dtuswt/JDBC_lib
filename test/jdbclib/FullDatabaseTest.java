@@ -29,7 +29,7 @@ public class FullDatabaseTest {
 
 //        System.out.println("ID is " + s.getInt("user_id"));
 //        assertNotNull(s.getInt("user_id"));
-        System.out.println("Generated user_id = " + s.getInt("user_id"));
+//        System.out.println("Generated user_id = " + s.getInt("user_id"));
 //        assertEquals("John", s.getString("user_firstname"));
 //        assertEquals("Doe", s.getString("user_lastname"));
 //        assertEquals("JD", s.getString("initials"));
