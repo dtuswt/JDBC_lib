@@ -2,6 +2,7 @@ package jdbclib;
 
 import org.junit.Test;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static org.junit.Assert.*;
@@ -22,7 +23,14 @@ public class FullDatabaseTest {
             throw new SQLException(e.getMessage());
         }
 
-        db.update("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\");");
+        ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\");");
+
+        assertNotNull(s.getInt("user_id"));
+        System.out.println("Generated userid = " + s.getInt("user_id"));
+        assertEquals("John", s.getString("user_firstname"));
+        assertEquals("Doe", s.getString("user_lastname"));
+        assertEquals("JD", s.getString("initials"));
+        assertEquals("SuperSecretPassword", s.getString("password"));
 
         try {
             db.close();
