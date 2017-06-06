@@ -51,8 +51,8 @@
       <file leaf-file-name="FullDatabaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="360">
+              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -758,7 +758,7 @@
       <workItem from="1496411608985" duration="1301000" />
       <workItem from="1496654380432" duration="10708000" />
       <workItem from="1496687101622" duration="1876000" />
-      <workItem from="1496734266195" duration="1899000" />
+      <workItem from="1496734266195" duration="2044000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up DBConnector">
       <created>1496656578972</created>
@@ -942,11 +942,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496742030559</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="resultset gets data?">
+      <created>1496742259002</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1496742259002</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15784000" />
+    <option name="totallyTimeSpent" value="15929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="2521" height="1417" extended-state="6" />
@@ -1020,7 +1027,8 @@
     <MESSAGE value="get column 0" />
     <MESSAGE value="this works" />
     <MESSAGE value="this also works" />
-    <option name="LAST_COMMIT_MESSAGE" value="this also works" />
+    <MESSAGE value="resultset gets data?" />
+    <option name="LAST_COMMIT_MESSAGE" value="resultset gets data?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1293,8 +1301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/jdbclib/FullDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="360">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding />
         </state>
       </provider>

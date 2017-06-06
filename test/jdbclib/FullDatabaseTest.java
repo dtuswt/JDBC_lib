@@ -26,6 +26,8 @@ public class FullDatabaseTest {
         ResultSet s = db.query("CALL insertUser(\"John\", \"Doe\", \"JD\", \"SuperSecretPassword\", \"1\");");
 
         System.out.println("ResultSet has first: " + s.first());
+        System.out.println("Get ID Column: " + s.findColumn("user_id"));
+        System.out.println("UserId = " + s.getInt(1));
 //        System.out.println("ID: " + s.getString(1));
 
 //        System.out.println("ID is " + s.getInt("user_id"));
