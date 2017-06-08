@@ -15,7 +15,7 @@ public class DBConnector implements IConnector {
     private int port;
 
     public DBConnector(String hostname, int port, String database, String username, String password) {
-        this.host = "jdbc:mysql://"+hostname+":"+this.port+"/"+this.database;
+        this.host = "jdbc:mysql://"+hostname+":"+port+"/"+database;
         this.port = port;
         this.database = database;
         this.username = username;
