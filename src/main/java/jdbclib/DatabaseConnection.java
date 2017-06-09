@@ -27,12 +27,14 @@ public class DatabaseConnection {
 
     public DatabaseConnection() throws IOException, ArithmeticException {
         File file = null;
-        URL url = this.getClass().getClassLoader().getResource("/.env");
+        URL url = this.getClass().getClassLoader().getResource(".env");
         try {
             file = new File(url.toURI());
         }  catch (URISyntaxException e) {
             file = new File(url.getPath());
         }
+
+        System.out.println("Environment file path: " + file.getPath());
 
         Properties props = null;
 
