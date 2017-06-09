@@ -3,6 +3,8 @@ package jdbclib;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.Properties;
 
 /**
@@ -24,7 +26,14 @@ public class DatabaseConnection {
     }
 
     public DatabaseConnection() throws IOException, ArithmeticException {
-        File file = new File(".env");
+        File file = null;
+        URL url = this.getClass().getClassLoader().getResource("/.env");
+        try {
+            file = new File(url.toURI());
+        }  catch (URISyntaxException e) {
+            file = new File(url.getPath());
+        }
+
         Properties props = null;
 
         try (FileInputStream fileInputStream = new FileInputStream(file)){
